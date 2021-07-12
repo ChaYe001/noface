@@ -1,0 +1,583 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="input" out_port_id="data"/>
+		<IR id="1" name="Mul1_/Fused_Mul_/FusedScaleShift_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv1/scale" out_port_id="conv1"/>
+		<IR id="2" name="conv1" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu1" out_port_id="conv1"/>
+		<IR id="3" name="relu1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2_1/dw/scale" out_port_id="conv2_1/dw"/>
+		<IR id="4" name="conv2_1/dw" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu2_1/dw" out_port_id="conv2_1/dw"/>
+		<IR id="5" name="relu2_1/dw" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2_1/sep/scale" out_port_id="conv2_1/sep"/>
+		<IR id="6" name="conv2_1/sep" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu2_1/sep" out_port_id="conv2_1/sep"/>
+		<IR id="7" name="relu2_1/sep" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2_2/dw/scale" out_port_id="conv2_2/dw"/>
+		<IR id="8" name="conv2_2/dw" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu2_2/dw" out_port_id="conv2_2/dw"/>
+		<IR id="9" name="relu2_2/dw" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2_2/sep/scale" out_port_id="conv2_2/sep"/>
+		<IR id="10" name="conv2_2/sep" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu2_2/sep" out_port_id="conv2_2/sep"/>
+		<IR id="11" name="relu2_2/sep" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv3_1/dw/scale" out_port_id="conv3_1/dw"/>
+		<IR id="12" name="conv3_1/dw" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu3_1/dw" out_port_id="conv3_1/dw"/>
+		<IR id="13" name="relu3_1/dw" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv3_1/sep/scale" out_port_id="conv3_1/sep"/>
+		<IR id="14" name="conv3_1/sep" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu3_1/sep" out_port_id="conv3_1/sep"/>
+		<IR id="15" name="relu3_1/sep" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv3_2/dw/scale" out_port_id="conv3_2/dw"/>
+		<IR id="16" name="conv3_2/dw" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu3_2/dw" out_port_id="conv3_2/dw"/>
+		<IR id="17" name="relu3_2/dw" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv3_2/sep/scale" out_port_id="conv3_2/sep"/>
+		<IR id="18" name="conv3_2/sep" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu3_2/sep" out_port_id="conv3_2/sep"/>
+		<IR id="19" name="relu3_2/sep" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv4_1/dw/scale" out_port_id="conv4_1/dw"/>
+		<IR id="20" name="conv4_1/dw" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu4_1/dw" out_port_id="conv4_1/dw"/>
+		<IR id="21" name="relu4_1/dw" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv4_1/sep/scale" out_port_id="conv4_1/sep"/>
+		<IR id="22" name="conv4_1/sep" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu4_1/sep" out_port_id="conv4_1/sep"/>
+		<IR id="23" name="relu4_1/sep" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv4_2/dw/scale" out_port_id="conv4_2/dw"/>
+		<IR id="24" name="conv4_2/dw" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu4_2/dw" out_port_id="conv4_2/dw"/>
+		<IR id="25" name="relu4_2/dw" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv4_2/sep/scale" out_port_id="conv4_2/sep"/>
+		<IR id="26" name="conv4_2/sep" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu4_2/sep" out_port_id="conv4_2/sep"/>
+		<IR id="27" name="relu4_2/sep" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5_1/dw/scale" out_port_id="conv5_1/dw"/>
+		<IR id="28" name="conv5_1/dw" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu5_1/dw" out_port_id="conv5_1/dw"/>
+		<IR id="29" name="relu5_1/dw" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5_1/sep/scale" out_port_id="conv5_1/sep"/>
+		<IR id="30" name="conv5_1/sep" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu5_1/sep" out_port_id="conv5_1/sep"/>
+		<IR id="31" name="relu5_1/sep" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5_2/dw/scale" out_port_id="conv5_2/dw"/>
+		<IR id="32" name="conv5_2/dw" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu5_2/dw" out_port_id="conv5_2/dw"/>
+		<IR id="33" name="relu5_2/dw" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5_2/sep/scale" out_port_id="conv5_2/sep"/>
+		<IR id="34" name="conv5_2/sep" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu5_2/sep" out_port_id="conv5_2/sep"/>
+		<IR id="35" name="relu5_2/sep" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5_3/dw/scale" out_port_id="conv5_3/dw"/>
+		<IR id="36" name="conv5_3/dw" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu5_3/dw" out_port_id="conv5_3/dw"/>
+		<IR id="37" name="relu5_3/dw" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5_3/sep/scale" out_port_id="conv5_3/sep"/>
+		<IR id="38" name="conv5_3/sep" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu5_3/sep" out_port_id="conv5_3/sep"/>
+		<IR id="39" name="relu5_3/sep" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5_4/dw/scale" out_port_id="conv5_4/dw"/>
+		<IR id="40" name="conv5_4/dw" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu5_4/dw" out_port_id="conv5_4/dw"/>
+		<IR id="41" name="relu5_4/dw" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5_4/sep/scale" out_port_id="conv5_4/sep"/>
+		<IR id="42" name="conv5_4/sep" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu5_4/sep" out_port_id="conv5_4/sep"/>
+		<IR id="43" name="relu5_4/sep" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5_5/dw/scale" out_port_id="conv5_5/dw"/>
+		<IR id="44" name="conv5_5/dw" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu5_5/dw" out_port_id="conv5_5/dw"/>
+		<IR id="45" name="relu5_5/dw" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5_5/sep/scale" out_port_id="conv5_5/sep"/>
+		<IR id="46" name="conv5_5/sep" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu5_5/sep" out_port_id="conv5_5/sep"/>
+		<IR id="47" name="relu5_5/sep" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5_6/dw/scale" out_port_id="conv5_6/dw"/>
+		<IR id="48" name="conv5_6/dw" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu5_6/dw" out_port_id="conv5_6/dw"/>
+		<IR id="49" name="relu5_6/dw" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv5_6/sep/scale" out_port_id="conv5_6/sep"/>
+		<IR id="50" name="conv5_6/sep" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu5_6/sep" out_port_id="conv5_6/sep"/>
+		<IR id="51" name="relu5_6/sep" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv6/dw/scale" out_port_id="conv6/dw"/>
+		<IR id="52" name="conv6/dw" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu6/dw" out_port_id="conv6/dw"/>
+		<IR id="53" name="relu6/dw" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv6/sep/scale" out_port_id="conv6/sep"/>
+		<IR id="54" name="conv6/sep" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="relu6/sep" out_port_id="conv6/sep"/>
+		<IR id="55" name="relu6/sep" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv6/sep_up" out_port_id="conv6/sep_up"/>
+		<IR id="56" name="conv6/sep_up" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv6/sep_up_slice" out_port_id="conv6/sep_up1"/>
+		<IR id="57" name="conv6/sep_up_slice" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv6/sep_up_slice" out_port_id="conv6/sep_up2"/>
+		<IR id="57" name="conv6/sep_up_slice" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv6/sep_up_maxout" out_port_id="conv6/sep_up_maxout"/>
+		<IR id="58" name="conv6/sep_up_maxout" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_0" out_port_id="fusion_0"/>
+		<IR id="59" name="fusion_0" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_1" out_port_id="fusion_1"/>
+		<IR id="60" name="fusion_1" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_1_up" out_port_id="fusion_1_up"/>
+		<IR id="61" name="fusion_1_up" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_1_up_slice" out_port_id="fusion_1_up1"/>
+		<IR id="62" name="fusion_1_up_slice" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_1_up_slice" out_port_id="fusion_1_up2"/>
+		<IR id="62" name="fusion_1_up_slice" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_1_up_maxout" out_port_id="fusion_1_up_maxout"/>
+		<IR id="63" name="fusion_1_up_maxout" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_2" out_port_id="fusion_2"/>
+		<IR id="64" name="fusion_2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_loc" out_port_id="fusion_2_mbox_loc"/>
+		<IR id="65" name="fusion_2_mbox_loc" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_loc_perm" out_port_id="fusion_2_mbox_loc_perm"/>
+		<IR id="66" name="fusion_2_mbox_loc_perm" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_loc_flat" out_port_id="fusion_2_mbox_loc_flat"/>
+		<IR id="67" name="fusion_2_mbox_loc_flat" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_1_mbox_loc" out_port_id="fusion_1_mbox_loc"/>
+		<IR id="68" name="fusion_1_mbox_loc" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_1_mbox_loc_perm" out_port_id="fusion_1_mbox_loc_perm"/>
+		<IR id="69" name="fusion_1_mbox_loc_perm" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_1_mbox_loc_flat" out_port_id="fusion_1_mbox_loc_flat"/>
+		<IR id="70" name="fusion_1_mbox_loc_flat" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_0_mbox_loc" out_port_id="fusion_0_mbox_loc"/>
+		<IR id="71" name="fusion_0_mbox_loc" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_0_mbox_loc_perm" out_port_id="fusion_0_mbox_loc_perm"/>
+		<IR id="72" name="fusion_0_mbox_loc_perm" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_0_mbox_loc_flat" out_port_id="fusion_0_mbox_loc_flat"/>
+		<IR id="73" name="fusion_0_mbox_loc_flat" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv6/sep_mbox_loc" out_port_id="conv6/sep_mbox_loc"/>
+		<IR id="74" name="conv6/sep_mbox_loc" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv6/sep_mbox_loc_perm" out_port_id="conv6/sep_mbox_loc_perm"/>
+		<IR id="75" name="conv6/sep_mbox_loc_perm" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv6/sep_mbox_loc_flat" out_port_id="conv6/sep_mbox_loc_flat"/>
+		<IR id="76" name="conv6/sep_mbox_loc_flat" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv14_1/scale" out_port_id="conv14_1"/>
+		<IR id="77" name="conv14_1" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv14_1/relu" out_port_id="conv14_1"/>
+		<IR id="78" name="conv14_1/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv14_2/scale" out_port_id="conv14_2"/>
+		<IR id="79" name="conv14_2" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv14_2/relu" out_port_id="conv14_2"/>
+		<IR id="80" name="conv14_2/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_loc" out_port_id="conv14_2_mbox_loc"/>
+		<IR id="81" name="conv14_2_mbox_loc" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_loc_perm" out_port_id="conv14_2_mbox_loc_perm"/>
+		<IR id="82" name="conv14_2_mbox_loc_perm" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_loc_flat" out_port_id="conv14_2_mbox_loc_flat"/>
+		<IR id="83" name="conv14_2_mbox_loc_flat" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv15_1/scale" out_port_id="conv15_1"/>
+		<IR id="84" name="conv15_1" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv15_1/relu" out_port_id="conv15_1"/>
+		<IR id="85" name="conv15_1/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv15_2/scale" out_port_id="conv15_2"/>
+		<IR id="86" name="conv15_2" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv15_2/relu" out_port_id="conv15_2"/>
+		<IR id="87" name="conv15_2/relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_loc" out_port_id="conv15_2_mbox_loc"/>
+		<IR id="88" name="conv15_2_mbox_loc" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_loc_perm" out_port_id="conv15_2_mbox_loc_perm"/>
+		<IR id="89" name="conv15_2_mbox_loc_perm" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_loc_flat" out_port_id="conv15_2_mbox_loc_flat"/>
+		<IR id="90" name="conv15_2_mbox_loc_flat" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="mbox_loc" out_port_id="mbox_loc"/>
+		<IR id="91" name="mbox_loc" out_port_id="6"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf" out_port_id="fusion_2_mbox_conf"/>
+		<IR id="92" name="fusion_2_mbox_conf" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf_slice" out_port_id="fusion_2_mbox_conf1"/>
+		<IR id="93" name="fusion_2_mbox_conf_slice" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf1_slice" out_port_id="fusion_2_mbox_conf11"/>
+		<IR id="94" name="fusion_2_mbox_conf1_slice" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf1_slice" out_port_id="fusion_2_mbox_conf12"/>
+		<IR id="94" name="fusion_2_mbox_conf1_slice" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf1_slice" out_port_id="fusion_2_mbox_conf13"/>
+		<IR id="94" name="fusion_2_mbox_conf1_slice" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf1_maxout" out_port_id="fusion_2_mbox_conf1_maxout"/>
+		<IR id="95" name="fusion_2_mbox_conf1_maxout" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf1_slice" out_port_id="fusion_2_mbox_conf14"/>
+		<IR id="94" name="fusion_2_mbox_conf1_slice" out_port_id="4"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf1_out" out_port_id="fusion_2_mbox_conf1_out"/>
+		<IR id="96" name="fusion_2_mbox_conf1_out" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf_slice" out_port_id="fusion_2_mbox_conf2"/>
+		<IR id="93" name="fusion_2_mbox_conf_slice" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf2_slice" out_port_id="fusion_2_mbox_conf21"/>
+		<IR id="97" name="fusion_2_mbox_conf2_slice" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf2_slice" out_port_id="fusion_2_mbox_conf22"/>
+		<IR id="97" name="fusion_2_mbox_conf2_slice" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf2_slice" out_port_id="fusion_2_mbox_conf23"/>
+		<IR id="97" name="fusion_2_mbox_conf2_slice" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf2_maxout" out_port_id="fusion_2_mbox_conf2_maxout"/>
+		<IR id="98" name="fusion_2_mbox_conf2_maxout" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf2_slice" out_port_id="fusion_2_mbox_conf24"/>
+		<IR id="97" name="fusion_2_mbox_conf2_slice" out_port_id="4"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf2_out" out_port_id="fusion_2_mbox_conf2_out"/>
+		<IR id="99" name="fusion_2_mbox_conf2_out" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf_slice" out_port_id="fusion_2_mbox_conf3"/>
+		<IR id="93" name="fusion_2_mbox_conf_slice" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf3_slice" out_port_id="fusion_2_mbox_conf31"/>
+		<IR id="100" name="fusion_2_mbox_conf3_slice" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf3_slice" out_port_id="fusion_2_mbox_conf32"/>
+		<IR id="100" name="fusion_2_mbox_conf3_slice" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf3_slice" out_port_id="fusion_2_mbox_conf33"/>
+		<IR id="100" name="fusion_2_mbox_conf3_slice" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf3_maxout" out_port_id="fusion_2_mbox_conf3_maxout"/>
+		<IR id="101" name="fusion_2_mbox_conf3_maxout" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf3_slice" out_port_id="fusion_2_mbox_conf34"/>
+		<IR id="100" name="fusion_2_mbox_conf3_slice" out_port_id="4"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf3_out" out_port_id="fusion_2_mbox_conf3_out"/>
+		<IR id="102" name="fusion_2_mbox_conf3_out" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf_boost" out_port_id="fusion_2_mbox_conf_boost"/>
+		<IR id="103" name="fusion_2_mbox_conf_boost" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf_perm" out_port_id="fusion_2_mbox_conf_perm"/>
+		<IR id="104" name="fusion_2_mbox_conf_perm" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_conf_flat" out_port_id="fusion_2_mbox_conf_flat"/>
+		<IR id="105" name="fusion_2_mbox_conf_flat" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_1_mbox_conf" out_port_id="fusion_1_mbox_conf"/>
+		<IR id="106" name="fusion_1_mbox_conf" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_1_mbox_conf_perm" out_port_id="fusion_1_mbox_conf_perm"/>
+		<IR id="107" name="fusion_1_mbox_conf_perm" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_1_mbox_conf_flat" out_port_id="fusion_1_mbox_conf_flat"/>
+		<IR id="108" name="fusion_1_mbox_conf_flat" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_0_mbox_conf" out_port_id="fusion_0_mbox_conf"/>
+		<IR id="109" name="fusion_0_mbox_conf" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="fusion_0_mbox_conf_perm" out_port_id="fusion_0_mbox_conf_perm"/>
+		<IR id="110" name="fusion_0_mbox_conf_perm" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_0_mbox_conf_flat" out_port_id="fusion_0_mbox_conf_flat"/>
+		<IR id="111" name="fusion_0_mbox_conf_flat" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv6/sep_mbox_conf" out_port_id="conv6/sep_mbox_conf"/>
+		<IR id="112" name="conv6/sep_mbox_conf" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv6/sep_mbox_conf_perm" out_port_id="conv6/sep_mbox_conf_perm"/>
+		<IR id="113" name="conv6/sep_mbox_conf_perm" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv6/sep_mbox_conf_flat" out_port_id="conv6/sep_mbox_conf_flat"/>
+		<IR id="114" name="conv6/sep_mbox_conf_flat" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_conf" out_port_id="conv14_2_mbox_conf"/>
+		<IR id="115" name="conv14_2_mbox_conf" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_conf_perm" out_port_id="conv14_2_mbox_conf_perm"/>
+		<IR id="116" name="conv14_2_mbox_conf_perm" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_conf_flat" out_port_id="conv14_2_mbox_conf_flat"/>
+		<IR id="117" name="conv14_2_mbox_conf_flat" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_conf" out_port_id="conv15_2_mbox_conf"/>
+		<IR id="118" name="conv15_2_mbox_conf" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_conf_perm" out_port_id="conv15_2_mbox_conf_perm"/>
+		<IR id="119" name="conv15_2_mbox_conf_perm" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_conf_flat" out_port_id="conv15_2_mbox_conf_flat"/>
+		<IR id="120" name="conv15_2_mbox_conf_flat" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="mbox_conf" out_port_id="mbox_conf"/>
+		<IR id="121" name="mbox_conf" out_port_id="6"/>
+	</map>
+	<map>
+		<framework name="mbox_conf_reshape" out_port_id="mbox_conf_reshape"/>
+		<IR id="123" name="mbox_conf_reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="mbox_conf_softmax" out_port_id="mbox_conf_softmax"/>
+		<IR id="124" name="mbox_conf_softmax" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="mbox_conf_flatten" out_port_id="mbox_conf_flatten"/>
+		<IR id="125" name="mbox_conf_flatten" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="fusion_2_mbox_priorbox" out_port_id="fusion_2_mbox_priorbox"/>
+		<IR id="126" name="fusion_2_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_1_mbox_priorbox" out_port_id="fusion_1_mbox_priorbox"/>
+		<IR id="127" name="fusion_1_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="fusion_0_mbox_priorbox" out_port_id="fusion_0_mbox_priorbox"/>
+		<IR id="128" name="fusion_0_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv6/sep_mbox_priorbox" out_port_id="conv6/sep_mbox_priorbox"/>
+		<IR id="129" name="conv6/sep_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv14_2_mbox_priorbox" out_port_id="conv14_2_mbox_priorbox"/>
+		<IR id="130" name="conv14_2_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv15_2_mbox_priorbox" out_port_id="conv15_2_mbox_priorbox"/>
+		<IR id="131" name="conv15_2_mbox_priorbox" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="mbox_priorbox" out_port_id="mbox_priorbox"/>
+		<IR id="132" name="mbox_priorbox" out_port_id="6"/>
+	</map>
+	<map>
+		<framework name="detection_out" out_port_id="0"/>
+		<IR id="133" name="detection_out" out_port_id="3"/>
+	</map>
+</mapping>

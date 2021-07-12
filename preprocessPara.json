@@ -1,0 +1,1 @@
+{"serviceType": 1, "modelLen": 123, "time_slices": 100, "frame_src": 2, "serviceID": 1, "data_type": "FP16", "preprocessPara": {"RGBMean": {"alpaG": 127.5, "alpaR": 127.5, "alpaB": 127.5}, "scale": 127.5}, "version": 1}
